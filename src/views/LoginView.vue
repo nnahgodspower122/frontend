@@ -10,7 +10,7 @@
                 <div class="bg-white px-4 py-5 sm:p-6">
                     <div>
                         <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-                        <input type="text" v-maska data-maska="# (###) ###-####" v-model="credentials.phone" name="phone" id="phone" placeholder="1 (234) 567-8910"
+                        <input type="tel" v-maska data-maska="# (###) ###-####" v-model="credentials.phone" name="phone" id="phone" placeholder=""
                             class="mt-1 block w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-black focus:outline-none">
                     </div>
                 </div>
