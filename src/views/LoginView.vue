@@ -1,10 +1,15 @@
 <template>
     <div class="pt-16">
-        <h1 class="text-3xl font-semibold mb-4">Enter your phone number</h1>
+        <div class="flex items-center justify-center">
+            <img src="@/assets/logo1.png" alt="Logo" class="h-18 w-18 mr-2">
+        </div>
+        <h1 class="text-5xl font-semibold mb-10">Dispatch Rider System</h1>
+        <h3 class="text-2xl font-semibold mb-4">Start the Signup Process Now</h3>
         <form v-if="!waitingOnVerification" action="#" @submit.prevent="handleLogin">
             <div class="overflow-hidden shadow sm:rounded-md max-w-sm mx-auto text-left">
                 <div class="bg-white px-4 py-5 sm:p-6">
                     <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
                         <input type="text" v-maska data-maska="# (###) ###-####" v-model="credentials.phone" name="phone" id="phone" placeholder="1 (234) 567-8910"
                             class="mt-1 block w-full px-3 py-2 rounded-md border border-gray-300 shadow-sm focus:border-black focus:outline-none">
                     </div>
